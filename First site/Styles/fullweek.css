@@ -1,0 +1,63 @@
+header {
+  margin: 20px;
+}
+body {
+  margin: 50px;
+}
+h1 {
+  font-size: 52px;
+  color: rgb(28, 2, 2);
+  margin: 0;
+}
+#description {
+  margin: 12px;
+}
+header p {
+  margin-bottom: 36px;
+}
+a {
+  padding: 10px 48px;
+  background-color: #f5240db3;
+  color: azure;
+  border: 0px solid chocolate;
+  border-radius: 4px;
+  font-size: 24px;
+  display: inline-block;
+  margin: 0;
+}
+a:hover {
+  background-color: lavender;
+  text-decoration: none;
+}
+
+ol {
+  color: gold;
+  width: 500px;
+  margin: 12px auto 0 auto;
+}
+
+li {
+  padding: 2px;
+  box-shadow: 5px 10px 10px;
+  list-style: none;
+  background-color: rgb(239, 220, 176);
+  font-weight: bold;
+  color: goldenrod;
+  margin: 12px;
+  box-shadow: 10px 10px 10px;
+}
+b h2 {
+  color: brown;
+  font-family: "Oswald", sans-serif;
+}
+main p {
+  margin: 12px;
+  color: crimson;
+}
+.daily-goal {
+  margin: 2px;
+  color: rgb(86, 31, 203);
+}
+.highlight-goal {
+  background-color: rgb(231, 233, 126);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="/" method="GET">
+      <label for="name">Your name</label>
+      <input type="text" name="user-name" id="name" />
+      <label for="email">Your email adress</label>
+      <input type="email" name="user-email" id="email" />
+      <label for="password">Password</label>
+      <input type="password" id="password" />
+      <label for="age">Your age</label>
+      <input type="number" step="1" , name="age" id="age" />
+      <label for="birthdate">Your birthdate</label>
+      <input type="date" id="birthdate" />
+      <hr />
+      <h2>How should we verify your account</h2>
+      <div class="form-control-inline">
+        <input type="radio" name="choose" id="text" value="text" />
+        <label for="text">Via text message/SMS</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="choose" id="phone" value="phone" />
+        <label for="phone">Via text a phone call</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="choose" id="mail" value="email" />
+        <label for="mail">Via email</label>
+      </div>
+      <hr />
+      <label for="file">Upload file</label>
+      <input type="file" id="file" />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

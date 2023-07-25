@@ -1,0 +1,68 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(244, 234, 255);
+}
+
+h1 {
+  font-size: 52px;
+  color: blue;
+}
+header {
+  text-align: center;
+  padding: 32px;
+}
+header img {
+  width: 300px;
+}
+main {
+  background-color: rgb(122, 74, 218);
+  padding: 32px;
+  margin: 32px auto;
+  width: 700px;
+  border-radius: 8px;
+  color: aliceblue;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  margin: 14px 0;
+  padding-left: 10px;
+  border-left: 5px solid transparent;
+}
+a {
+  text-decoration: none;
+  color: blue;
+  background-color: rgb(240, 229, 166);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+a:hover,
+a:active {
+  background-color: rgb(250, 201, 39);
+}
+footer {
+  text-align: center;
+  margin: 100px;
+}
+footer p {
+  color: blueviolet;
+  margin-top: 30px;
+}
+footer a {
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: gold;
+  color: brown;
+}
+footer a:hover,
+footer a:active {
+  background-color: coral;
+}
+.extra-important {
+  color: rgb(255, 237, 177);
+  border-color: rgb(255, 237, 177);
+}

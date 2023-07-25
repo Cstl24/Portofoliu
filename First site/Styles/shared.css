@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+  background-color: antiquewhite;
+}
+a {
+  font-family: "Fira+Sans";
+  font-size: 30px;
+  color: rgb(33, 124, 204);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: coral;
+  font-size: 50px;
+}
+p {
+  font-family: "Fira+Sans", sans-serif;
+  color: rgb(81, 81, 87);
+  font-size: 20px;
+}
+li {
+  list-style: none;
+  font-family: "Fira+Sans", sans-serif;
+  color: rgb(81, 81, 87);
+  font-size: 20px;
+}
+ol {
+  color: gold;
+}
