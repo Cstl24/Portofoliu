@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/index.html" method="GET">
+        <h2>How can we help you?</h2>
+        <section id="user-data">
+          <ul>
+            <li>
+              <label for="user-name">Your Name</label>
+              <input type="text" name="user-name" id="user-name" required />
+            </li>
+            <li>
+              <label for="user-email">Your E-Mail Address</label>
+              <input type="email" name="user-email" id="user-email" />
+            </li>
+            <li>
+              <label for="user-phone">Your Phone Number</label>
+              <input type="tel" name="user-phone" id="user-phone" />
+            </li>
+            <li>
+              <label for="usser-message">Your Message</label>
+              <textarea
+                name="usser-message"
+                id="usser-message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </li>
+            <li>
+              <label for="via">How did you find us?</label>
+              <select name="web" id="via">
+                <option value="web">Web Search</option>
+                <option value="newspapers">Newspapers</option>
+                <option value="tv">TV</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section id="questions">
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="choose">
+              <input type="radio" name="choose" id="phone" />
+              <label for="phone">Call me</label>
+            </li>
+            <li class="choose">
+              <input type="radio" name="choose" id="email" />
+              <label for="phone">Call meSend me an email</label>
+            </li>
+            <li class="choose">
+              <input type="radio" name="choose" id="refuse" />
+              <label for="phone">Don't reply</label>
+            </li>
+            <li class="choose">
+              <input type="checkbox" name="terms" id="terms" />
+              <label for="terms">Accept Terms</label>
+            </li>
+          </ul>
+        </section>
+        <section id="buttons">
+          <button type="reset" class="clear">Clear</button>
+          <button class="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

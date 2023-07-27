@@ -3,6 +3,19 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 1rem;
 }
+h1 {
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 2.5rem;
+}
+h2 {
+  text-align: center;
+  color: rgb(22, 22, 22);
+  font-family: "Roboto";
+  font-size: 1.5rem;
+}
+
 label {
   margin-bottom: 0.5rem;
   display: block;
@@ -17,28 +30,47 @@ form {
   box-sizing: border-box;
 }
 
-input {
+ul {
+  margin-left: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0 1rem 0 0;
+}
+
+input,
+textarea,
+select {
   width: 100%;
-  color: rgb(61, 58, 58);
   display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
   font-size: 1rem;
   font: inherit;
   border: 1px solid rgb(184, 184, 184);
   padding: 0.25rem;
+  color: rgb(61, 58, 58);
 }
-input:focus {
+input:focus,
+textarea:focus,
+select:focus {
   background-color: rgb(219, 190, 253);
   color: black;
   border-color: rgb(32, 5, 63);
 }
-
+textarea {
+  resize: vertical;
+}
 button {
   display: block;
-  margin: 1rem 0;
-  border-radius: 5px;
-  background-color: rgb(32, 5, 63);
   font: inherit;
+  background-color: rgb(32, 5, 63);
   color: white;
+  border: 1px solid rgb(32, 5, 63);
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
   cursor: pointer;
 }
 button:hover {
@@ -47,11 +79,10 @@ button:hover {
 }
 .form-control-inline {
   display: flex;
-  text-align: center;
 }
 .form-control-inline input {
   width: auto;
-  margin: 0 0.5rem 0.5rem 0.5rem;
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 48rem) {

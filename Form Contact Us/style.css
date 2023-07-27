@@ -1,0 +1,81 @@
+body {
+  background-color: azure;
+  font-family: "Roboto", sans-serif;
+  margin: 1rem;
+}
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+form {
+  width: 40rem;
+  margin: 3rem auto;
+  background-color: rgb(161, 224, 231);
+  padding: 1rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font: inherit;
+  border: 1px solid rgb(184, 184, 184);
+  padding: 0.5rem;
+  color: rgb(61, 58, 58);
+  border-radius: 5px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: rgb(219, 190, 253);
+  color: black;
+  border-color: rgb(32, 5, 63);
+}
+.choose {
+  display: flex;
+}
+
+.choose input {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+button {
+  font: inherit;
+  border: 1px solid rgb(32, 5, 63);
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clear {
+  background-color: aliceblue;
+  color: black;
+}
+.clear:hover {
+  background-color: rgb(111, 192, 233);
+}
+.submit {
+  background-color: black;
+  color: aliceblue;
+}
+.submit:hover {
+  background-color: rgb(89, 215, 226);
+}
+#buttons {
+  text-align: right;
+}
+
+#choose {
+  display: flex;
+  flex-direction: row;
+}

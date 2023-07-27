@@ -13,35 +13,88 @@
     />
   </head>
   <body>
+    <header>
+      <h1>DEMO FORM</h1>
+    </header>
+    <main>
     <form action="/" method="GET">
-      <label for="name">Your name</label>
-      <input type="text" name="user-name" id="name" />
-      <label for="email">Your email adress</label>
-      <input type="email" name="user-email" id="email" />
-      <label for="password">Password</label>
-      <input type="password" id="password" />
-      <label for="age">Your age</label>
-      <input type="number" step="1" , name="age" id="age" />
-      <label for="birthdate">Your birthdate</label>
-      <input type="date" id="birthdate" />
+      <section id="personal-data">
+        <h2>Personal data</h2>
+        <ul>
+          <li>
+            <label for="user-name">Your name</label>
+            <input type="text" name="user-name" id="name" required placeholder="Nume si Prenume" />
+          </li>
+          <li>
+            <label for="message-text">Your message</label>
+          <textarea name="message" id="message-text" cols="30" rows="10"></textarea>
+          </li>
+          <li>
+            <label for="email">Your email adress</label>
+          <input type="email" name="user-email" id="email" required/>
+          </li>
+          <li>
+            <label for="password">Password</label>
+          <input type="password" id="password" required minlength="8"/>
+          </li>
+          <li>
+            <label for="age">Your age</label>
+          <input type="number" step="1" , name="age" id="age" required min="18" />
+          </li>
+          <li>
+            <label for="birthdate">Your birthdate</label>
+          <input type="date" id="birthdate" />
+          </li>
+        </ul>
+      </section>
       <hr />
-      <h2>How should we verify your account</h2>
-      <div class="form-control-inline">
-        <input type="radio" name="choose" id="text" value="text" />
+      <section id="preferences">
+        <H2>Preferences</H2>
+        <label for="selection">Your favorite color?</label>
+        <select name="color?" id="color-select">
+          <option value="-">-</option>
+          <option value="blue">Blue</option>
+          <option value="red">Red</option>
+          <option value="yellow">Yellow</option>
+        </select> 
+      </section>
+            <h2>How should we verify your account</h2>
+      <section id="contact">
+        <ul>
+         <li class="form-control-inline">
+        <input type="radio" name="choose" id="text" value="text" required/>
         <label for="text">Via text message/SMS</label>
-      </div>
-      <div class="form-control-inline">
-        <input type="radio" name="choose" id="phone" value="phone" />
+        </li>
+      <li class="form-control-inline">
+        <input type="radio" name="choose" id="phone" value="phone" required/>
         <label for="phone">Via text a phone call</label>
-      </div>
-      <div class="form-control-inline">
-        <input type="radio" name="choose" id="mail" value="email" />
+      </li>
+      <li class="form-control-inline">
+        <input type="radio" name="choose" id="mail" value="email" required />
         <label for="mail">Via email</label>
-      </div>
-      <hr />
-      <label for="file">Upload file</label>
-      <input type="file" id="file" />
-      <button>Submit</button>
+      </li>
+      <li class="form-control-inline">
+        <input type="checkbox"  id="agree-terms" name="terms"/>
+        <label for="checkbox">Agree to terms</label></div>
+      </li>
+       <li class="form-control-inline">
+        <input type="checkbox"  id="contact-email" name="Contact" value="email"/>
+        <label for="contact-email">Contact via email</label></div>
+       </li>
+      <li class="form-control-inline">
+        <input type="checkbox"  id="contact-phone" name="Contact" value="phone"/>
+        <label for="contact-phone">Contact me via phone</label></div>
+      </li> 
+        </ul>
+      </section>
+            <hr />
+      <section id="upload">
+          <label for="file">Upload file</label>
+          <input type="file" id="file" />
+          <button type="reset">Reset</button>
+          <button>Submit</button>
+      </section>
     </form>
+    </main>
   </body>
 </html>
