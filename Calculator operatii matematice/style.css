@@ -1,0 +1,17 @@
+body {
+  background-color: antiquewhite;
+}
+
+h1 {
+  text-align: center;
+  width: 250 px;
+}
+
+ul {
+  align-items: center;
+}
+
+form {
+  padding: 1rem;
+  margin: 0;
+}
