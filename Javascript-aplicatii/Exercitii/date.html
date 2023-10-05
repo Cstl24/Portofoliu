@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obiectul Date</title>
+  </head>
+  <body onload="ceas()">
+    <h1>Obiectul Date</h1>
+    <p>Afisarea unui ceas într-o pagina web</p>
+    <p id="ceas"></p>
+    <script>
+      function ceas() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = verifica(m);
+        s = verifica(s);
+        document.getElementById("ceas").innerHTML = h + ":" + m + ":" + s;
+        t = setTimeout("ceas()", 500);
+        function verifica(i) {
+          if (i < 10) {
+            i = "0" + i;
+          }
+          return i;
+        }
+      }
+    </script>
+    <p
+      id="dataCurenta"
+      onmouseover="culoare1(this)"
+      onmouseout="culoare2(this)"
+    >
+      Afisarea datei curente completa<br />
+      <script>
+        document.write("Astăzi este: " + Date());
+        function culoare1() {
+          document.getElementById("dataCurenta").style.color = "red";
+        }
+        function culoare2() {
+          document.getElementById("dataCurenta").style.color = "blue";
+        }
+      </script>
+    </p>
+    <h4>Utilizarea metodei getDay() pentru a determina ziua din saptamana.</h4>
+    <hr />
+    <p id="sapt"></p>
+    <script>
+      var d = new Date();
+      var weekday = new Array(7);
+      weekday[0] = "Duminica";
+      weekday[1] = "Luni";
+      weekday[2] = "Marti";
+      weekday[3] = "Miercuri";
+      weekday[4] = "Joi";
+      weekday[5] = "Vineri";
+      weekday[6] = "Sambata";
+      document.getElementById("sapt").innerHTML =
+        "Astazi este " + weekday[d.getDay()];
+    </script>
+  </body>
+</html>

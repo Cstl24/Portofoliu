@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+  <body>
+    <script>
+      var a = parseInt(prompt("Introdu a"));
+      var b = parseInt(prompt("Introdu b"));
+      var c = parseInt(prompt("Introdu c"));
+
+      if (a <= b && b <= c) {
+        document.write("Maximul este " + c);
+      } else if (b <= a && a <= c) {
+        document.write("Maximul este " + c);
+      } else if (c <= a && a <= b) {
+        document.write("Maximul este " + b);
+      } else if (a <= c && c <= b) {
+        document.write("Maximul este " + b);
+      } else if (c <= b && b <= a) {
+        document.write("Maximul este " + a);
+      } else if (b <= c && c <= a) {
+        document.write("Maximul este " + a);
+      }
+    </script>
+    <p id="maxim">Maxim</p>
+    <script>
+      var x = prompt("Introduceti x");
+      var y = prompt("Introduceti y");
+      var z = prompt("Introduceti z");
+      document.getElementById("maxim").innerHTML =
+        "Maximul dintre " +
+        x +
+        "," +
+        y +
+        "," +
+        z +
+        " este " +
+        Math.max(x, y, z);
+    </script>
+  </body>
+</html>

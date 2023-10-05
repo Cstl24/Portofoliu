@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function numere(n) {
+        for (i = 1; i <= n; i++) {
+          for (j = 1; j <= i; j++) {
+            document.write(j);
+          }
+          document.writeln("<br/>");
+        }
+      }
+      document.write(numere(9));
+    </script>
+    <p>Numere prime</p>
+    <script>
+      var n;
+      var i;
+      function rest(n, i) {
+        return n % i;
+      }
+      function numerePrime(n) {
+        for (i = 2; i < n; i++) {
+          if (rest(n, i) != 0) {
+            document.write(n + ",");
+            continue;
+          }
+        }
+      }
+
+      document.write(numerePrime(10));
+      //document.write(rest(6, 5));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+form {
+  display: flex;
+}
+#obs {
+  height: 15px;
+}
+p {
+  margin: 0;
+  color: rgb(123, 146, 146);
+}
+button {
+  color: rgb(26, 29, 28);
+  text-shadow: beige;
+  background-color: bisque;
+  border-radius: 5px;
+}

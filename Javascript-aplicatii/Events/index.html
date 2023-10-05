@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+  <body onload="paginaNoua(this)">
+    <h1>Pagina de lucru</h1>
+    <p class="paragraf" onmousedown="paragraf1(this)">Primul paragraf</p>
+    <p
+      class="paragraf"
+      onmousedown="paragraf2(this)"
+      onmousewheel="paragraf3(this)"
+    >
+      Al doilea paragraf
+    </p>
+    <p class="paragraf" id="p3">Al treilea paragraf</p>
+    <marquee onmouseover="stop()" onmouseout="start()" direction="right"
+      >Salut!</marquee
+    >
+    <button id="btn" onmouseover="fundal1(this)" onmouseleave="fundal2(this)">
+      Click
+    </button>
+    <form action="text">
+      <label for="text">Observatii</label>
+      <input id="text" type="text" /><span
+        ><span id="litere">100</span>/100</span
+      >
+    </form>
+  </body>
+</html>

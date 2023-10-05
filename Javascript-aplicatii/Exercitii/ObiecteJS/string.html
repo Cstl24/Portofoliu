@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String</title>
+  </head>
+  <body>
+    <h1>Returneaza lungimea unui sir</h1>
+    <script>
+      var txt = "Lungimea unui string";
+      document.write(
+        "lungimea sirului " + txt + " este: " + txt.length + "<br/>"
+      );
+      document.write(
+        "Extrag cu slice() subsirul 'unui'. Noul sir va fi: " +
+          txt.slice(9, 14) +
+          "<br/>"
+      );
+      document.write(
+        "Transform textul cu majuscule: " + txt.toUpperCase(txt) + "<br/>"
+      );
+      document.write("Transform textul in index: " + txt.sub() + "<br/>");
+      document.write("Transform textul in exponent: " + txt.sup() + "<br/>");
+      document.write(
+        "Transform textul in link Google:  " +
+          txt.link("https://www.google.com/") +
+          "<br/>"
+      );
+      document.write(
+        "Transform culoare text in rosu: " + txt.fontcolor("red") + "<br/>"
+      );
+      document.write("Modificare font mic: " + txt.small(txt) + "<br/>");
+      document.write("Modificare font mare: " + txt.big(txt) + "<br/>");
+      document.write("Crearea anchor: " + txt.anchor(txt) + "<br/>");
+    </script>
+  </body>
+</html>

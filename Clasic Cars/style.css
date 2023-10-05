@@ -14,12 +14,29 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-
 body {
   background-color: #ccc;
   padding-right: 3rem;
 }
+#navig {
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 100%;
+  padding: 3rem;
+  font-size: 2rem;
+}
 
+#navigare {
+  display: flex;
+  flex-direction: row;
+}
+
+#limba {
+  margin: 0;
+  padding: 1rem;
+  font-size: 60%;
+}
 .center {
   display: flex;
   justify-content: center;
@@ -62,6 +79,10 @@ body {
   transform: rotate(360deg) translateY(-0.4rem);
 }
 /* End of Menu */
+
+.navig {
+  background-color: #777;
+}
 
 /* Navbar */
 .navbar {

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <h1 onmousedown="dimensiune(this)">Obiectul ARRAY</h1>
+    <h4 class="h4" onmouseover="color(this)">1. Crearea unui tablou de date</h4>
+    <script>
+      var animale = ["Câine", "Pisică", "Șoarece"];
+      document.write("Elementele memorate in tablou sunt: " + animale);
+    </script>
+    <h4 class="h4" onmouseover="color(this)">
+      2. Adaugare element nou la inceput cu unshift()
+    </h4>
+    <script>
+      animale.unshift("Cal");
+      document.write(animale);
+    </script>
+    <h4 class="h4" onmouseover="color(this)">
+      3. Adaugare element nou la sfarsit cu push()
+    </h4>
+    <script>
+      animale.push("Iepure");
+      document.write(animale);
+    </script>
+    <h4 onmouseover="color(this)" id="for">
+      4. Parcurgerea elementelor tabloului cu instructiunea for...in
+    </h4>
+    <script>
+      var x;
+      for (x in animale) {
+        document.write(animale[x] + "</br>");
+      }
+      function color() {
+        document.getElementById("for").style.color = "red";
+        document.getElementsByTagName("h4")[1].style.color = "blue";
+      }
+    </script>
+    <h4 class="h4" onmousedown="dimensiune(this)">
+      5. Schimbarea ordinii elementelor cu reverse()
+    </h4>
+    <script>
+      document.write(animale.reverse());
+      function dimensiune() {
+        document.getElementsByTagName("h4")[4].style.fontSize = "25px";
+        document.getElementsByTagName("h1")[0].style.backgroundColor = "green";
+      }
+    </script>
+  </body>
+</html>

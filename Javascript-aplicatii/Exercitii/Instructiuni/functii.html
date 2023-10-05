@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Functii</h1>
+    <p>Un salut!</p>
+    <script>
+      var x = "";
+      function salut() {
+        return "Bună!";
+      }
+      document.write(salut());
+    </script>
+    <p>Buton de salut</p>
+    <script>
+      function salut1() {
+        document.getElementById("trei").innerHTML = "Ce faci?";
+      }
+      function culoareDown() {
+        document.getElementById("btn").style.color = "red";
+        document.getElementById("trei").style.color = "blue";
+      }
+      function culoareUp() {
+        document.getElementById("btn").style.color = "black";
+        document.getElementById("trei").style.color = "black";
+      }
+    </script>
+    <button
+      id="btn"
+      type="button"
+      onclick="salut1()"
+      value="Apasa"
+      onmousedown="culoareDown(this)"
+      onmouseup="culoareUp(this)"
+    >
+      CLICK
+    </button>
+    <p id="trei"></p>
+  </body>
+</html>
