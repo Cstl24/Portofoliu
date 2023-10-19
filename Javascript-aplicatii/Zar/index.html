@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zarul</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h2>Statistica</h2>
+    <p>
+      Testeaza-ti norocul si vezi din cate incercari poti nimeri numarul dand cu
+      zarul (intren 1 si 6).
+    </p>
+    <div class="control">
+      <label for="numarul-tinta">Numarul tinta</label>
+      <input type="number" min="1" max="6" id="numarul-tinta" />
+    </div>
+    <button onclick="datCuZarul(this)">Da cu zarul</button>
+    <ul id="valori">
+      Valorile tale:
+    </ul>
+    <p id="someText">
+      Ai obtinut numarul
+      <span id="numarul-obtinut" class="output">X</span> dand cu zarul de
+      <span id="numar-incercari" class="output">Y ori</span>.
+    </p>
+    <p id="textul"></p>
+  </body>
+</html>

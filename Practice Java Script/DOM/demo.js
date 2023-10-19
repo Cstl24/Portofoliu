@@ -10,6 +10,11 @@ function updateRemainingCharacters(event) {
   const enteredTextLength = enteredText.length;
 
   const remainingCharacters = maxAllowedChars - enteredTextLength;
+  if (remainingCharacters <= 10 && remainingCharacters >= 1) {
+    document.getElementById("product-name").style.backgroundColor = "yellow";
+  } else if (remainingCharacters <= 1) {
+    document.getElementById("product-name").style.backgroundColor = "red";
+  }
 
   remainingCharsElement.textContent = remainingCharacters;
 }
